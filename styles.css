@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    color: aliceblue;
+    background-color: #B545F5;
+    background-image: url('/espaco.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.topo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    gap: 100px;
+
+    color: aliceblue;
+    background-color: #ffffff10;
+    border: 2px solid #ffffff10;
+
+    backdrop-filter: blur(10px);
+}
+
+
+
+.conteudo {
+    color: aliceblue;
+    background-color: #ffffff10;
+    border: 2px solid #ffffff10;
+    border-radius: 15px;
+
+    margin: 80px 100px;
+
+    backdrop-filter: blur(30px);
+}
+
+.conteudo-textos {
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    gap: 90px;
+
+    text-shadow: 4px 4px 30px black;
+    
+    padding-left: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+
+    margin-top: 100px;
+    margin-left: 50%;
+    height: 60px;
+    width: 150px;
+    
+    border-radius: 15px;
+    border: none;
+
+    background-color: #B545F5;
+    color: aliceblue;
+    box-shadow: 3px 3px 30px #16161610;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e07871;
+    color: aliceblue;
+    transition: 0.5s;
+
+}
+
+nav a { 
+    position: relative;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    text-shadow: 0.15em 0.15em 0.05em #124e48;
+ }
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: aliceblue;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+    box-shadow: 0.15em 0.15em 0.05em #124e48;
+}
+
+a:hover:after {
+    width: 100%;
+}
